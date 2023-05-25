@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="./js/crypto-js.min.js"></script>
+    <script src="./js/main.js" ></script>
+    <title>Cajero Automatico del BanChen</title>
+  </head>
+  <body>
+    <header>
+        <div class="">
+        </div>
+    </header>
+    <main>
+        <section class="sec-principal">
+            <div class="principal" id="principal">
+                <div class="principal-cuenta">
+                    <div class="principal-cuenta-descripcion">
+                        <span>Cuenta:</span>
+                    </div>
+                    <div class="principal-cuenta-campo">
+                        <input type="text" id="cuenta" value="12345"/>
+                    </div>                        
+                </div>
+                <div class="principal-contrasena">
+                    <div class="principal-contrasena-descripcion">
+                        <span>Contrase&ntilde;a:</span>
+                    </div>
+                    <div class="principal-contrasena-campo">
+                        <input type="password" id="contrasena" value="mali200"/>
+                    </div>                        
+                </div>
+                <div class="principal-boton">
+                    <div class="principal-boton-login">
+                        <button id="boton-login" value="Autenticarse" onclick="autenticarse()">Autenticarse</button>
+                    </div>                                        
+                </div>                            
+            </div>
+            <div class="principal-autenticado" id="principal-autenticado">
+                <div class="principal-autenticado-bienvenido">
+                    <div class="principal-autenticado-bienvenido-descripcion">
+                        <span>Bienvenido(a):</span>
+                    </div>
+                    <div>
+                        <span id="nombreautenticado" class="nombreautenticado"></span>
+                    </div>                        
+                </div>
+                <div>
+                    <div class="principal-autenticado-bienvenido-consultar">
+                        <div>
+                            <span>Consultar Saldo:</span>
+                        </div>
+                        <div>
+                            <button id="boton-login" value="Autenticarse" onclick="autenticarse()">Consultar Saldo</button>
+                        </div>                                        
+                    </div>
+                    <div>
+                        <div>
+                            <span>Agregar Dinero:</span>
+                        </div>
+                        <div>
+                            <input type="text" id="textingresarmonto"/>
+                        </div>                        
+                        <div>
+                            <button id="boton-ingresar-monto" value="Ingresar Monto" onclick="ingresarmonto()">Ingresar Monto</button>
+                        </div>                                        
+                    </div>
+                    <div>
+                        <div>
+                            <span>Retirar Dinero:</span>
+                        </div>
+                        <div>
+                            <input type="text" id="textretirarmonto"/>
+                        </div>                        
+                        <div>
+                            <button id="boton-retirar-monto" value="Retirar Monto" onclick="retirarmonto()">Retirar Monto</button>
+                        </div>                                        
+                    </div>
+                </div>
+                            
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="terminosycondiciones">
+
+        </div>
+    </footer>
+  </body>
+</html> 

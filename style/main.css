@@ -1,0 +1,65 @@
+:root{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.sec-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+}
+
+.principal{
+    display: block;
+    width: 20rem;
+}
+
+.principal-cuenta{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.principal-cuenta-descripcion{
+    display: flex;
+    width: 10rem;
+}
+
+.principal-contrasena{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.principal-contrasena-descripcion{
+    display: flex;
+    width: 10rem;
+}
+
+.principal-boton{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.principal-autenticado{
+    display: none;
+    width: 20rem;
+}
+
+.principal-autenticado-bienvenido{
+    display: flex;
+}
+
+.principal-autenticado-bienvenido-descripcion{
+    width: 10rem;
+}
+
+.nombreautenticado{
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.principal-autenticado-bienvenido-consultar{
+    display: flex;
+}
