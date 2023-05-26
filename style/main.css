@@ -1,19 +1,160 @@
 :root{
     font-size: 16px;
     box-sizing: border-box;
+    --color-cajero: #aefefe;
+
 }
+
+html, body, main{
+    height: 100%;
+}
+
+input[type='number']{
+    width: 60px;
+} 
 
 .sec-principal {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 400px;
+    height: 80%;
     width: 100%;
 }
 
 .principal{
     display: block;
     width: 20rem;
+    background-color: var(--color-cajero);
+    border: 10px solid;
+    border-radius: 30px;    
+}
+
+.principal-autenticado{
+    background-color: var(--color-cajero);
+    border: 10px solid;
+    border-radius: 30px;
+}
+
+.logo-banco{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-banco path{
+    width: 30%;
+}
+
+.principal-autenticado-bienvenido{
+    width: 67%;
+    padding: 2rem;
+    border: 0.35rem solid;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: white;
+}
+
+.principal-autenticado-bienvenido-consultar{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 3px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.4rem;
+}
+
+.principal-autenticado-bienvenido-consultar-texto{
+    display: none;
+    background-color: white;
+    border: solid 3px ;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.8rem;
+}
+
+.principal-autenticado-bienvenido-consultar-boton{
+    display: flex;
+    background-color: white;
+    border: solid 3px ;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 0.8rem;
+    justify-content: center;
+}
+
+.principal-autenticado-bienvenido-consultar-texto-descripcion{
+    width:50%;
+    display: flex;
+    justify-content: end;
+}
+
+.principal-autenticado-bienvenido-ingresarmonto{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 3px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.4rem;
+}
+
+.principal-autenticado-bienvenido-ingresarmonto-texto{
+    display: flex;
+    border-radius: 1rem;
+    margin: 0.4rem;
+    padding: 0.2rem;
+}
+
+.principal-autenticado-bienvenido-ingresarmonto-descripcion{
+    width: 50%;
+}
+
+.principal-autenticado-bienvenido-ingresarmonto-entrada{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.principal-autenticado-bienvenido-ingresarmonto-boton{
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 0.4rem;
+
+}
+
+.principal-autenticado-bienvenido-retirarmonto{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: solid 3px;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.4rem;
+}
+
+
+.principal-autenticado-bienvenido-retirarmonto-texto{
+    display: flex;
+    border-radius: 1rem;
+    margin: 0.4rem;
+    padding: 0.2rem;
+}
+
+.principal-autenticado-bienvenido-retirarmonto-descripcion{
+    width: 50%;
+}
+
+.principal-autenticado-bienvenido-retirarmonto-entrada{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.principal-autenticado-bienvenido-retirarmonto-boton{
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 0.4rem;
 }
 
 .principal-cuenta{
@@ -62,4 +203,11 @@
 
 .principal-autenticado-bienvenido-consultar{
     display: flex;
+}
+
+
+.salir{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }

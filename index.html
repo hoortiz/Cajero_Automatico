@@ -17,12 +17,15 @@
     <main>
         <section class="sec-principal">
             <div class="principal" id="principal">
+                <div class="logo-banco">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16"> <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/> </svg>
+                </div>
                 <div class="principal-cuenta">
                     <div class="principal-cuenta-descripcion">
                         <span>Cuenta:</span>
                     </div>
                     <div class="principal-cuenta-campo">
-                        <input type="text" id="cuenta" value="12345"/>
+                        <input type="number" id="cuenta" value="12345"/>
                     </div>                        
                 </div>
                 <div class="principal-contrasena">
@@ -40,6 +43,10 @@
                 </div>                            
             </div>
             <div class="principal-autenticado" id="principal-autenticado">
+                <div class="logo-banco">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-bank" viewBox="0 0 16 16"> <path d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z"/> </svg>
+                </div>
+
                 <div class="principal-autenticado-bienvenido">
                     <div class="principal-autenticado-bienvenido-descripcion">
                         <span>Bienvenido(a):</span>
@@ -50,47 +57,54 @@
                 </div>
                 <div>
                     <div class="principal-autenticado-bienvenido-consultar">
-                        <div >
-                            <div>
-                                <span>Consultar Saldo:</span>
+                        <div class="principal-autenticado-bienvenido-consultar-texto" id="divsaldo">
+                            <div class="principal-autenticado-bienvenido-consultar-texto-descripcion">
+                                <span>Saldo:</span>
                             </div>
                             <div >
                                 <span id="saldoconsultado"></span>
                             </div>
                         </div>
-                        <div>
+                        <div class="principal-autenticado-bienvenido-consultar-boton">
                             <button id="boton-login" value="Autenticarse" onclick="consultarsaldo()">Consultar Saldo</button>
                         </div>                                        
                     </div>
-                    <div>
-                        <div>
-                            <span>Agregar Dinero:</span>
+                    <div class="principal-autenticado-bienvenido-ingresarmonto">
+                        <div class="principal-autenticado-bienvenido-ingresarmonto-texto">
+                            <div class="principal-autenticado-bienvenido-ingresarmonto-descripcion">
+                                <span>Monto a Ingresar:</span>
+                            </div>
+                            <div class="principal-autenticado-bienvenido-ingresarmonto-entrada"> 
+                                <input type="number" id="montoaingresar" min="1" size="2"/>
+                            </div>                        
                         </div>
-                        <div>
-                            <input type="text" id="montoaingresar"/>
-                        </div>                        
-                        <div>
+                        <div class="principal-autenticado-bienvenido-ingresarmonto-boton">
                             <button id="boton-ingresar-monto" value="Ingresar Monto" onclick="ingresarmonto()">Ingresar Monto</button>
                         </div>                                        
                     </div>
-                    <div>
-                        <div>
-                            <span>Retirar Dinero:</span>
+                    <div class="principal-autenticado-bienvenido-retirarmonto">
+                        <div class="principal-autenticado-bienvenido-retirarmonto-texto">
+                            <div class="principal-autenticado-bienvenido-retirarmonto-descripcion">
+                                <span>Monto a Retirar:</span>
+                            </div>
+                            <div class="principal-autenticado-bienvenido-retirarmonto-entrada">
+                                <input type="number" id="montoaretirar" min="1" size="2"/>
+                            </div>                        
                         </div>
-                        <div>
-                            <input type="text" id="montoaretirar"/>
-                        </div>                        
-                        <div>
+                        <div class="principal-autenticado-bienvenido-retirarmonto-boton">
                             <button id="boton-retirar-monto" value="Retirar Monto" onclick="retirarmonto()">Retirar Monto</button>
                         </div>                                        
                     </div>
                 </div>                
+                <div class="salir">
+                    <div>
+                        <button id="boton-salir" value="Salir" onclick="salir()">Salir</button>
+                    </div>                                        
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer">
-        <div class="terminosycondiciones">
-        </div>
     </footer>
   </body>
 </html> 
