@@ -50,11 +50,16 @@
                 </div>
                 <div>
                     <div class="principal-autenticado-bienvenido-consultar">
-                        <div>
-                            <span>Consultar Saldo:</span>
+                        <div >
+                            <div>
+                                <span>Consultar Saldo:</span>
+                            </div>
+                            <div >
+                                <span id="saldoconsultado"></span>
+                            </div>
                         </div>
                         <div>
-                            <button id="boton-login" value="Autenticarse" onclick="autenticarse()">Consultar Saldo</button>
+                            <button id="boton-login" value="Autenticarse" onclick="consultarsaldo()">Consultar Saldo</button>
                         </div>                                        
                     </div>
                     <div>
@@ -62,7 +67,7 @@
                             <span>Agregar Dinero:</span>
                         </div>
                         <div>
-                            <input type="text" id="textingresarmonto"/>
+                            <input type="text" id="montoaingresar"/>
                         </div>                        
                         <div>
                             <button id="boton-ingresar-monto" value="Ingresar Monto" onclick="ingresarmonto()">Ingresar Monto</button>
@@ -73,20 +78,18 @@
                             <span>Retirar Dinero:</span>
                         </div>
                         <div>
-                            <input type="text" id="textretirarmonto"/>
+                            <input type="text" id="montoaretirar"/>
                         </div>                        
                         <div>
                             <button id="boton-retirar-monto" value="Retirar Monto" onclick="retirarmonto()">Retirar Monto</button>
                         </div>                                        
                     </div>
-                </div>
-                            
+                </div>                
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="terminosycondiciones">
-
         </div>
     </footer>
   </body>
