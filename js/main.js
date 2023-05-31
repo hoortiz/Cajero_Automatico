@@ -123,5 +123,7 @@ function salir(){
   document.getElementById("divsaldo").style.display = "none";
   document.getElementById("montoaingresar").value = "";
   document.getElementById("montoaretirar").value = "";
+  document.getElementById("cuenta").value = "";
+  document.getElementById("contrasena").value = "";
 }
 

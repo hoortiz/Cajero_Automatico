@@ -1,7 +1,9 @@
 :root{
     font-size: 16px;
     box-sizing: border-box;
-    --color-cajero: #aefefe;
+    --color-cajero: #0aac38;
+    --color-cajero-campos: #e2fbea;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -9,29 +11,45 @@ html, body, main{
     height: 100%;
 }
 
+body{
+    background-image: url(../img/fondo.png);
+    background-repeat: repeat;
+}
+
 input[type='number']{
-    width: 60px;
+    width: 80px;
 } 
 
 .sec-principal {
     display: flex;
     justify-content: center;
-    height: 80%;
     width: 100%;
 }
+
 
 .principal{
     display: block;
     width: 20rem;
     background-color: var(--color-cajero);
     border: 10px solid;
-    border-radius: 30px;    
+    border-radius: 2rem;    
+    padding-bottom: 1rem;
+}
+
+.principal-cuenta-contrasena{
+    border: 0.3rem solid;
+    border-radius: 1rem;    
+    background-color: var(--color-cajero-campos);
+    margin: 1rem;
+    padding: 1rem;
+
 }
 
 .principal-autenticado{
     background-color: var(--color-cajero);
     border: 10px solid;
-    border-radius: 30px;
+    border-radius: 2rem;
+    padding-bottom: 1rem;
 }
 
 .logo-banco{
@@ -49,7 +67,7 @@ input[type='number']{
     border: 0.35rem solid;
     border-radius: 1rem;
     margin: 1rem;
-    background-color: white;
+    background-color: var(--color-cajero-campos);
 }
 
 .principal-autenticado-bienvenido-consultar{
@@ -64,16 +82,15 @@ input[type='number']{
 
 .principal-autenticado-bienvenido-consultar-texto{
     display: none;
-    background-color: white;
     border: solid 3px ;
     border-radius: 1rem;
     margin: 0.5rem;
     padding: 0.8rem;
+    background-color: var(--color-cajero-campos);
 }
 
 .principal-autenticado-bienvenido-consultar-boton{
     display: flex;
-    background-color: white;
     border: solid 3px ;
     border-radius: 1rem;
     margin: 0.5rem;
@@ -85,6 +102,11 @@ input[type='number']{
     width:50%;
     display: flex;
     justify-content: end;
+    padding-right: 1rem;
+}
+
+#saldoconsultado{
+    font-weight: bold;
 }
 
 .principal-autenticado-bienvenido-ingresarmonto{
@@ -160,21 +182,37 @@ input[type='number']{
 .principal-cuenta{
     display: flex;
     padding-top: 1rem;
+    justify-content: center;
 }
 
 .principal-cuenta-descripcion{
     display: flex;
-    width: 10rem;
+    width: 40%;
+}
+
+.principal-cuenta-campo{
+    display: flex;
+    width: 40%;
 }
 
 .principal-contrasena{
     display: flex;
     padding-top: 1rem;
+    justify-content: center;
 }
 
 .principal-contrasena-descripcion{
     display: flex;
-    width: 10rem;
+    width: 40%;
+}
+
+.principal-contrasena-campo{
+    display: flex;
+    width: 40%;
+}
+
+.principal-contrasena-campo input{
+    width: 80px;
 }
 
 .principal-boton{
