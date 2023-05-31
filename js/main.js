@@ -1,7 +1,8 @@
 let cuentas = [
     { nombre: "Mali", saldo: 200, numcuenta: 12345, contrasena: "3acda7e8c913e5d8958e2399afb470fe"},
     { nombre: "Gera", saldo: 290, numcuenta: 23456, contrasena: "b16972e4dd0505e7f213e109d8433634"},
-    { nombre: "Maui", saldo: 67 , numcuenta: 34567, contrasena: "7b41a372b6588179e4730be2061a9e6e"}
+    { nombre: "Maui", saldo: 67 , numcuenta: 34567, contrasena: "7b41a372b6588179e4730be2061a9e6e"},
+    { nombre: "Henrry", saldo: 690 , numcuenta: 45678, contrasena: "f745877f1dac393d8adb37b1d7eaed91"}
   ];
   
 let arreglousuario = "";
@@ -110,7 +111,6 @@ function retirarmonto(){
     document.getElementById("montoaretirar").value="";
   }
 }
-
 
 function salir(){
   arreglousuario = "";
